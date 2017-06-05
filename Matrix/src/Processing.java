@@ -43,7 +43,7 @@ public class Processing implements Runnable {
 			}
 		numm = Integer.parseInt(num);
 		for(int i = 0; i < matrix.size; i++) {
-			matrix.setElement(numm, i, matrix.getElement(numm, i) * 2);
+			matrix.setElement(numm, i, matrix.getElement(numm, i) * factor);
 		}
 	}
 }
