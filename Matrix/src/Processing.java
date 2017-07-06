@@ -14,7 +14,7 @@ public class Processing implements Runnable {
 		System.out.println();
 	}
 	
-	void proc() throws InterruptedException {
+	synchronized void proc() throws InterruptedException {
 		CountDownLatch matr = new CountDownLatch(matrix.size);
 		int line = 0;
 		for(int i = 0; i < matrix.size; i++) {
